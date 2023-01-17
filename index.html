@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Carosunel</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+      }
+      .carousel {
+        width: 800px;
+        background-color: #0ca678;
+        margin: 100px auto;
+        padding: 32px;
+        border-radius: 8px;
+        color: #fff;
+        display: flex;
+        /* align-items: center; */
+        gap: 86px;
+        padding-left: 86px;
+        position: relative;
+      }
+
+      .testmonial {
+      }
+      .testmonial-text {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.5;
+        margin-bottom: 32px;
+        color: #e6fcf5;
+      }
+      .testimonial-author {
+        font-size: 14px;
+        margin-bottom: 4px;
+      }
+
+      .testimonial-job {
+        font-size: 12px;
+      }
+
+      .picture {
+        height: 200px;
+        border-radius: 8px;
+        transform: scale(1.5);
+      }
+
+      .btn {
+        background-color: #fff;
+        border: none;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        position: absolute;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+      }
+      .icon {
+        height: 24px;
+        width: 24px;
+        stroke: #0ca678;
+      }
+      .left {
+        right: 0;
+        top: 40%;
+        transform: translate(50%, 0);
+      }
+
+      .right {
+        left: 0;
+        top: 40%;
+        transform: translate(0, 50%);
+      }
+
+      .dot {
+        height: 12px;
+        width: 12px;
+        background-color: #fff;
+        border: 2px solid #0ca678;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .dots {
+        position: absolute;
+        left: 50%;
+        bottom: 0%;
+        transform: translate(-50%, 32px);
+
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .live {
+        background-color: #0ca678;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="carousel">
+      <img
+        class="picture"
+        src="https://images.unsplash.com/photo-1579273166152-d725a4e2b755?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGljdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+        alt=""
+        srcset=""
+      />
+      <blockquote class="testmonial">
+        <p class="testmonial-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+          voluptatum delectus excepturi ab quas fuga tempore porro voluptas
+          incidunt corporis ratione, temporibus modi ut nihil maiores! Fugit ut
+          pariatur dolorum.
+        </p>
+
+        <p class="testimonial-author">Ezeiyoke Cosmas</p>
+        <p class="testimonial-job">Software designer</p>
+      </blockquote>
+
+      <button class="btn left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+      <button class="btn right">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+      <div class="dots">
+        <button class="dot live">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+      </div>
+    </div>
+  </body>
+</html>
